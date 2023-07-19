@@ -17,4 +17,9 @@ const translations = {
     }
 }
 
+export const direction = {
+    ar:"rtl",
+    en:"ltr"
+}
+
 export default translations
