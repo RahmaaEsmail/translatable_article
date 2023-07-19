@@ -8,7 +8,7 @@ const translateText = (lang)=> {
     const link = document.querySelector("a");
 
     if(lang == 'ar')
-     container.dir = "rtl";
+        container.dir = "rtl";
     else 
         container.dir = "ltr";
     
@@ -23,10 +23,7 @@ const init = ()=>{
     const btns = document.querySelectorAll("button");
     btns.forEach(btn => {
         btn.addEventListener("click", (e) => {
-            if (e.target.innerHTML == "العربية")
-                translateText('ar');
-            else
-                translateText('en')
+            translateText(e.target.dataset.lang)
         })
     })
 }
